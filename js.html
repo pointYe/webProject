@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <!-- <script>
+        alert("hello");
+    </script> -->
+    <!-- <script src="./js/demo.js"></script> -->
+</head>
+<body>
+    <input type="button"id="btn1" value="事件绑定1" onclick="on()">
+    <input type="button"id="btn2" value="事件绑定2">
+</body>
+    <script>
+        /* window.alert("aa");
+        document.write("bb");
+        console.log("cc"); */
+        /* var a=10;
+        a="kk";
+        alert(a); */
+   /*     {
+        var x=1;
+        var x="22";
+       } 
+       alert(x); */
+   /*     alert(typeof 3);
+       alert(typeof 3.12);
+       alert(typeof "fgh");
+       alert(typeof true);
+       alert(typeof null);
+       var a;
+       alert(typeof a); */
+       /* var a=20;
+       var b="20";
+       var c="20";
+       alert(a==b);
+       alert(a===b);
+       alert(b===c); */
+   /*     其他类型转数字:
+       alert(parseInt("12"));
+       alert(parseInt("11a99"));
+       alert(parseInt("a99"));
+ */
+   /*    其他类型转boolean  */
+/*     if(0)
+        alert(0);
+    if(NaN)
+        alert(NaN);
+    if(-1)
+        alert("数字除0和NaN之外都是false"); 
+    if("")
+        alert(1);
+    if(" ")
+        alert(2);
+    if(null)
+       alert(3);
+    if(undefined)
+       alert(4); */
+    
+      /*  function add(a,b){
+            return a+b;
+       }
+ */
+       /* var add=function(a,b){
+        return a+b;
+       }
+       var s=add(10,60);
+       alert(s); */
+
+       //var arr= new Array(1,2,3); 
+      /*  var arr=[7,8,9];
+       console.log(arr[0]);
+       console.log(arr[1]); */
+      /*  var arr=[1,2,3];
+       arr[20]=20;
+       arr[10]="ww"; */
+    /*    console.log(arr[0]);
+       console.log(arr[10]);
+       console.log(arr[11]);
+       console.log(arr[20]); */
+      /*  for (let i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
+       }
+       arr.forEach(function (e){
+            console.log(e);
+       })
+       arr.forEach((e)=>{
+            console.log(e);
+       }) */
+       /* arr.push(9,9,0);
+       arr.splice(1,3);//从1位置开始删，删3个
+       console.log(arr); */
+
+     /*   var s=new String("11111");
+       var ss=" apple pp ";
+       console.log(s);
+       console.log(ss);
+       console.log(s.length);
+       console.log(s.charAt(2));
+       console.log(ss.indexOf("pl"));
+       var st=ss.trim();
+       console.log(st);
+       console.log(st.substring(0,3)); */
+
+       /* var user={
+            name:"tom",
+            age:10,
+            gender:"male",
+            eat : function (){
+                alert("用膳");
+            }
+       } */
+       /* alert(user.name);
+       user.eat(); */
+
+       /* //定义json
+       var jsonstr='{"name":"mary","age":18,"addr":["上海","北京","西安"]}';
+       alert(jsonstr);
+       //json字符串转js对象
+       var obj=JSON.parse(jsonstr);
+       alert(obj.name);
+       //js对象转json字符串
+       alert(JSON.stringify(obj)); */
+
+      /*  window.alert("hhh");
+       //对话框，确定为true,取消为false
+       var flag=(confirm("是否删除"));
+       alert(flag);
+       //定时器，周期性执行某个函数
+       var i=0;
+       setInterval(function(){
+        i++;
+        console.log("定时器执行了"+i+"次");
+       },2000) */
+       //定时器，延迟指定时间执行一次某个函数
+      /*  setTimeout(function(){
+        alert("111");
+       },3000); */
+
+  /*      alert(location.href);
+       location.href="https://www.nefu.edu.cn/"; */
+    function on(){
+        alert("按钮1被点击");
+    }
+    document.getElementById('btn2').onclick=function(){
+        alert("按钮2被点击");
+    }
+
+    </script>
+</html>

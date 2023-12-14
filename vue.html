@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue练习</title>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+    <!-- ！+enter生成开头模板 -->
+    <!-- <div id="app">//视图
+        <input type="text" v-model="message">
+        {{message}}
+    </div> -->
+    <!-- <div id="app">
+        <a v-bind:href="url">链接1</a>
+        <a :href="url">链接1</a>
+        <input type="text" v-model="url">
+    </div> -->
+    <!-- <div id="app">
+        <input type="button" value="点我一下" v-on:click="handel()">
+        <input type="button" value="点我一下" @click="handel()">
+    </div> -->
+    <!-- <div id="app">
+        年龄<input type="text" v-model="age">经判断为：
+        <span v-if="age<=35">年轻人</span>
+        <span v-else-if="age>35&&age<60">中年人35-60</span>
+        <span v-else>老年人</span>
+        <br><br>
+        年龄<input type="text" v-model="age">经判断为：
+        <span v-show="age<=35">年轻人</span>
+        <span v-show="age>35&&age<60">中年人35-60</span>
+        <span v-show="age>=60">老年人</span>
+    </div> -->
+    <!-- <div id="app">
+       <div v-for="addr in addrs">{{addr}}</div>
+       <div v-for="(addr,index) in addrs">{{index+1}}:{{addr}}</div>
+    </div> -->
+    <!-- <div id="app">
+        <table border="1" cellspacing="0"width="60%">
+            <tr>
+                <th>编号</th>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>性别</th>
+                <th>成绩</th>
+                <th>等级</th>
+            </tr>
+            <tr align="center" v-for="(user,index) in users">
+                <td>{{index+1}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.age}}</td>
+                <td>
+                    <span v-if="user.gender==1">男</span>
+                    <span v-if="user.gender==0">女</span>
+                </td>
+                <td>{{user.score}}</td>
+                <td>
+                    <span v-if="user.score>=85">优秀</span>
+                    <span v-else-if="user.score>=60">及格</span>
+                    <span v-else style="color: brown;">不及格</span>
+                </td>
+            </tr>
+        </table>
+    </div> -->
+
+    <div id="app">
+    
+    </div>
+</body>
+<!-- <script>//vue对象
+    new Vue({
+        el:"#app",
+        data:{
+            message:"hello world"
+        }
+    })
+</script> -->
+<!-- <script>
+    new Vue({
+        el:"#app",
+        data:{
+            url:"https://www.baidu.com"
+        }
+    })
+</script> -->
+<!-- <script>
+    new Vue({
+        el:"#app",
+        data:{
+            
+        },
+        methods: {
+            handel:function(){
+                alert("你dial");
+            }
+        }
+    })
+</script> -->
+<!-- <script>
+    new Vue({
+        el:"#app",
+        data:{
+            age:20
+        },
+        methods: {
+            
+        }
+    })
+</script> -->
+<!-- <script>
+    new Vue({
+        el:"#app",
+        data:{
+            addrs:["北京","上海","西安","成都","深圳"]
+        },
+        methods: {
+            
+        }
+    })
+</script> -->
+<!-- <script>
+    new Vue({
+        el:"#app",
+        data:{
+            users:[
+                {
+                    name:"tom",
+                    age:20,
+                    gender:1,
+                    score:78
+                }, {
+                    name:"rose",
+                    age:18,
+                    gender:0,
+                    score:86
+                }, {
+                    name:"jerry",
+                    age:26,
+                    gender:1,
+                    score:90
+                }, {
+                    name:"tony",
+                    age:30,
+                    gender:1,
+                    score:20
+                }
+            ]
+        },
+        methods: {
+            
+        }
+    })
+</script> -->
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+           
+        },
+        methods: {
+            
+        },
+        mounted () {
+            alert("vue挂载完成,发生请求到服务端")
+        }
+    })
+</script>
+</html>
